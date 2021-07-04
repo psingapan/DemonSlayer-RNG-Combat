@@ -7,7 +7,7 @@ the demon slayer trio as a class 5 demon. Demon Slayer: Kimetsu No Yaiba is an a
 himself to demon slayer corps to avenge his family's death by finding a cure for his demon sister. Tanjiro is accompanied by two captivating demon slayers and his demon sister throughout
 the journey of reaching Muzan.
 
-The story of the game follows you, a class 5 demon that have pillaged your way through villages, unmerciful and relentless. You have not been challenged by anyone so you
+The story of the game follows you, a class 5 demon that have relentlessly pillaged your way through villages. You have not been challenged by anyone so you
 continue to publicize your conquests up until now. You ravage a village and on the very last house you scoured, you sense a shift in the air...
 
 Game Rules:
