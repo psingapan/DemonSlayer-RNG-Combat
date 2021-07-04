@@ -1,6 +1,6 @@
 **Update: To run the program, download the .sln file and open it in Visual Studio. The game may be buggy, working on revisions to story, character, and game mechanics.
 
---- DemonSlayer-RNG-Combat---
+                                                          --- DemonSlayer-RNG-Combat---
 
 Demon Slayer is an RPG-combat game based on the Demon Slayer: Kimetsu No Yaiba series. It's a C# console application purely written to entertain your imagination of facing 
 the demon slayer trio as a class 5 demon. Demon Slayer: Kimetsu No Yaiba is an anime series (on Netflix) that follows the story of a bold teenage boy named Tanjiro Kamado who dedicated
