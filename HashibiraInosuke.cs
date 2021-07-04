@@ -12,47 +12,35 @@ namespace testingproject
         public class HashibiraInosuke : DemonSlayer
         {
             //creating properties and fields
-            private string name = "Hashibira Inosuke";
             public static int InosukeHP = 250;
-            public new string[] attackDescrip = {
-                "Thunder Breathing: First Form: Thunderclap and Flash. The user unsheathes their blade, dashes forward at blinding speeds and decapitates the opponent faster than they can react",
-                "Thunder Breathing: Second Form: Rice Spirit. Kaigaku unleashes five electrified arching slashes all in a single moment.",
-                "Third Form: Thunder Swarm: Kaigaku surrounds the enemy with powerful waves of electricity and sword slashes that slice up the enemy in all directions."};
-            public new int[] damagePoints = { 30, 40, 60 };
+            public new string[] attackDescrip = {"",
+                "Beast Breathing... \nFirst Fang: Pierce. The user stabs the target's neck with both blades.",
+                "Beast Breathing... \nSecond Fang: Slice. The user unleashes a double slash with his two blades in an X-shaped cut.",
+                "Beast Breathing... \nFThird Fang: Devour. The user releases simultaneous horizontal slashes towards the target's throat."};
+            public new int[] damagePoints = { 0,30, 40, 60 };
             public int Inosukeinput;
 
-
-            //constructor with parameter
-            public HashibiraInosuke(int input)
+            public HashibiraInosuke()
             {
-                this.Inosukeinput = input;
             }
-            public HashibiraInosuke(string name, string[] attacks, int[] damage, int input)
-            {
-                this.Inosukeinput = input;
-                this.attackDescrip = attacks;
-                this.damagePoints = damage;
-                this.name = name;
-            }
-
 
             public int ComboAttack(int num)
             {
+                Console.Clear();
                 int rnum = r.Next(3);
 
                 //User attacks opponent and returns back Self HP.
-                Console.WriteLine($"\n\nInosuke charges at you...");
-                Console.WriteLine($"Inosuke damages you for - {damagePoints[num] + damagePoints[rnum]}.");
-                Console.WriteLine($"Inosuke strikes you with {attackDescrip[num]}.");
-                Self.SelfHP = Self.SelfHP - (damagePoints[num] + damagePoints[rnum]);
+                Console.WriteLine("\t\t\t\t\t\tStarting combat...");
+                Console.WriteLine($"\n\nInosuke launches at you...");
+                Console.WriteLine($"Inosuke damages you for - {Scenario.UserInput0 * (damagePoints[Scenario.UserInput0] + damagePoints[rnum])}.");
+                Console.WriteLine($"Inosuke strikes you with {attackDescrip[Scenario.UserInput0]}.");
+                Self.SelfHP = Self.SelfHP - (Scenario.UserInput0 * (damagePoints[Scenario.UserInput0] + damagePoints[rnum]));
 
                 if (Self.SelfHP <= 0)
                 {
                     Scenario.Final();
                 }
                 return Self.SelfHP;
-
-
             }
         }
     }

@@ -13,7 +13,6 @@ namespace testingproject
         public static int dsHP = 300;
         Random r = new Random();
 
-
         public DemonSlayer()
         {
         }

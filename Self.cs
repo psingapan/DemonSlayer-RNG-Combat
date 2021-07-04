@@ -10,8 +10,8 @@ namespace testingproject
     public class Self
     {
         public static int SelfHP = 250;
-        public new string[] attackDescrip = { "Blood Demon Art: Fire Blood Enragement. Snapping flames. The user generates", "Blood Demon Art: Fire Blood Enragement: Ignition", "Blood Demon Art: Spewing Lava" };
-        public new int[] damagePoints = { 30, 40, 60 };
+        public new string[] attackDescrip = { "", "Blood Demon Art: Fire Blood Enragement. Snapping flames. The user generates", "Blood Demon Art: Fire Blood Enragement: Ignition", "Blood Demon Art: Spewing Lava" };
+        public new int[] damagePoints = { 0,30, 40, 60 };
         Random r = new Random();
 
 
@@ -22,13 +22,14 @@ namespace testingproject
 
         public int sComboAttack(int num)
         {
+            
             int rnum = r.Next(3);
 
-            Console.WriteLine($"\n\n\n\nYou snarl and leap towards the demon slayer...");
-            Console.WriteLine($"\nYou damage Tanjiro for - {damagePoints[num] + damagePoints[rnum]}.");
-            Console.WriteLine($"You strike Tanjiro with {attackDescrip[num]} + {attackDescrip[rnum]}.");
+            Console.WriteLine($"\nYou snarl and leap towards the demon slayer...");
+            Console.WriteLine($"You damage Tanjiro for - {Scenario.UserInput0*(damagePoints[Scenario.UserInput0] + damagePoints[rnum])}.");
+            Console.WriteLine($"You strike Tanjiro with {attackDescrip[Scenario.UserInput0]} + {attackDescrip[rnum]}.");
 
-            DemonSlayer.dsHP = DemonSlayer.dsHP - (damagePoints[num] + damagePoints[rnum]);
+            DemonSlayer.dsHP = DemonSlayer.dsHP - (Scenario.UserInput0 * (damagePoints[Scenario.UserInput0] + damagePoints[rnum]));
 
             //add if statement to end game if hp is 0. switch to final scene then end game.
 
@@ -36,9 +37,11 @@ namespace testingproject
             {
                 Scenario.Final();
             }
-            Console.WriteLine($"\nYour opponent's HP: {DemonSlayer.dsHP}");
+            Console.WriteLine($"Your opponent's HP: {DemonSlayer.dsHP}");
+            Console.WriteLine($"Your HP: {SelfHP}");
 
-            Console.WriteLine("\t\t\t\tEnd of Round ");
+            Console.WriteLine("\t\t\t\t\t\tEnd of Combat ");
+            Console.WriteLine("\n\nNext round...");
 
 
             return DemonSlayer.dsHP;
