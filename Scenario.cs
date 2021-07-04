@@ -117,7 +117,7 @@ namespace testingproject
 
         public static int Round2(int userinput) // Round 2. User is asked to select a random number that will generate two random attacks towards opponent.
         {
-            Console.WriteLine("\n\n\n\n\n\n");
+            Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tRound 2");
             Console.WriteLine($"\n\n...You quickly dodge another one of {Scenario.dslayername}'s strikes. This kid is fast but you know you've got this. He dashes towards you... " +
              $"\n\n\n\nPick a number 1,2, or 3 that will return back a unique combo attack then press enter: ");
@@ -143,7 +143,7 @@ namespace testingproject
         public static int Round3(int userinput) // Round 3. User is asked to select a random number that will generate two random attacks towards opponent.
         {
 
-            Console.WriteLine("\n\n\n\n\n\n");
+            Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tRound 3");
             Console.WriteLine("\n\n...You both take a knee to the chest and fall to the floor.This kid is doing way more damage than the speed of my healing! At this rate I'll bleed to death before my head is cut! " +
              $"\nYou collect yourself for this one last fight." +
@@ -169,19 +169,21 @@ namespace testingproject
         }
         public static void Final()
         {
-            // Final scene to end game. 
+            // Final scene to end game.
 
-
+            Console.Clear();
+            Console.WriteLine("\t\t\t\t\t\tFinal Scene");
             while (true)
+           
                 if (DemonSlayer.dsHP <= 0)
                 {
-                    Console.WriteLine($"\n\nYou laugh. You finish {Scenario.dslayername} with a blowing strike.\n\n {Scenario.dslayername} HP is at {DemonSlayer.dsHP}.");
+                    Console.WriteLine($"\n\nYou laugh. \nYou finish {Scenario.dslayername} with a blowing strike.\n\n {Scenario.dslayername} HP is at {DemonSlayer.dsHP}.");
                     break;
                 }
                 else if (Self.SelfHP <= 0)
                 {
                     Console.WriteLine($"\n\nYou lose. {Scenario.dslayername} finishes you with a blowing strike.\n\n Your HP is at {Self.SelfHP}");
-                    Console.WriteLine("\n\n\t\t\t\t\t\tTo be continued...thanks for playing!");
+                    Console.WriteLine("\n\nTo be continued...thanks for playing!");
                     break;
                 }
             System.Environment.Exit(0);

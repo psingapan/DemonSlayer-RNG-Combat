@@ -37,11 +37,14 @@ namespace testingproject
             {
                 Scenario.Final();
             }
-            Console.WriteLine($"Your opponent's HP: {DemonSlayer.dsHP}");
-            Console.WriteLine($"Your HP: {SelfHP}");
+            Console.WriteLine($"\n\n\t\t\t\t\t\tYour opponent's HP: {DemonSlayer.dsHP}");
+            Console.WriteLine($"\t\t\t\t\t\tYour HP: {SelfHP}");
 
-            Console.WriteLine("\t\t\t\t\t\tEnd of Combat ");
-            Console.WriteLine("\n\nNext round...");
+            Console.WriteLine("\n\n\t\t\t\t\t\tEnd of Combat ");
+            Console.WriteLine("\n\nNext round.");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadLine();
+            Console.Clear();
 
 
             return DemonSlayer.dsHP;
