@@ -1,4 +1,4 @@
-**Update: To run the program, you can download the .sln file and open it in Visual Studio.
+**Update: To run the program, download the .sln file and open it in Visual Studio. The game may be buggy, working on revisions to story, character, and game mechanics.
 
 --- DemonSlayer-RNG-Combat---
 
