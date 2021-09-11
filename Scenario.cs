@@ -58,7 +58,7 @@ namespace testingproject
         
         public static int Round1(int userinput)
         {
-            // Round 1. User is asked to select a random number that will generate two random attacks towards opponent. How do you utilize this method for a specific object and pass those object's parameters into it.
+            // Round 1. User is asked to select a random number that will generate two random attacks towards opponent.
 
             Console.Clear();
 
@@ -145,10 +145,10 @@ namespace testingproject
 
             Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tRound 3");
-            Console.WriteLine("\n\n...You both take a knee to the chest and fall to the floor.This kid is doing way more damage than the speed of my healing! At this rate I'll bleed to death before my head is cut! " +
+            Console.WriteLine("\n\n...You both take a knee to the chest and fall to the floor. This kid is doing way more damage than the speed of my healing! At this rate I'll bleed to death before my head is cut! " +
              $"\nYou collect yourself for this one last fight." +
-             $"\n\n\t'Show me what you've got, {Scenario.dslayername}!', you roar." +
-             $"\n\n{Scenario.dslayername} charges at you. You were prepared for this." +
+             $"\n\n\t'Show me what you've got, {Scenario.dslayername}!!', you roar." +
+             $"\n\n{Scenario.dslayername} charges at you. He's fast, but you were prepared for this." +
              $"\n\n\n\nPick a number 1,2, or 3 that will return back a unique combo attack then press enter: ");
 
             try
